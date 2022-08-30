@@ -1,6 +1,5 @@
 const express = require('express')
 
-const db = require('../db/planets')
 
 const router = express.Router()
 
