@@ -7,15 +7,16 @@
     "fullstack"
   ],
   "scripts": {
-    "start": "node server.js",
+    "start": "vite",
+    
     "test": "jest",
     "test:watch": "jest --noStackTrace --watchAll",
     "dev": "run-p dev:client dev:server dev:css",
     "dev:client": "vite",
-    "dev:server": "nodemon --watch server server/index.js",
-    "build": "run-p build:client build:server",
+    "dev:server": "vite",
+    "build": "run-p build:server",
     "build:client": "vite build",
-    "build:server": "vite build",
+    "build:server": "vite build ",
     "lint": "eslint --ext .js,.jsx .",
     "knex": "knex --knexfile ./server/db/knexfile.js",
     "dev:css": "tailwindcss -i server/public/main.css -o server/public/output.css --watch",
