@@ -14,7 +14,7 @@
     "dev": "run-p dev:client dev:server dev:css",
     "dev:client": "vite",
     "dev:server": "vite",
-    "build": "run-p build:server",
+    "build": "run-p build:server dev:css",
     "build:client": "vite build",
     "build:server": "vite build ",
     "lint": "eslint --ext .js,.jsx .",
